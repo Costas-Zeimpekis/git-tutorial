@@ -1,3 +1,16 @@
+import { fetchPosts as getPosts, fetchComments as getComments } from './api'
+import Pet from './helpers'
+
+console.log(getPosts);
+console.log(getComments);
+
+
+const bulldog = new Pet('Brown');
+
+
+
+
+
 interface UnknownProps {
     [key:string]: string | number;
 }
