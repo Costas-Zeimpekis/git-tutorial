@@ -20,16 +20,16 @@ export default class Dog extends Animal{
 export function calculator( param: Calculator) {
     let result;
     if (param.type === "addition"){
-        result = param.num1 + param.num2;
+        result = Number(param.num1) + Number(param.num2);
     }
     else if (param.type === "substraction"){
-        result = param.num1 - param.num2;
+        result = Number(param.num1) - Number(param.num2);
     }
     else if (param.type === "multipication"){
-        result = param.num1 * param.num2;
+        result = Number(param.num1) * Number(param.num2);
     }
     else if (param.type === "division"){
-        result = param.num1 / param.num2;
+        result = Number(param.num1) / Number(param.num2);
     }
     return result;
 }
