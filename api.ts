@@ -14,13 +14,13 @@ interface Comment{
 }
 
 export function posts(){
-    return fetch('https://jsonplaceholder.typicode.com/posts')
+    fetch('https://jsonplaceholder.typicode.com/posts')
             .then(res => res.json())
             .then(data => console.log(data));
 }
 
 export function comments(){
-    return fetch('https://jsonplaceholder.typicode.com/comments')
+    fetch('https://jsonplaceholder.typicode.com/comments')
             .then(res => res.json())
             .then(data => console.log(data));
 }

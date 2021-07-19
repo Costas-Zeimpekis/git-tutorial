@@ -2,8 +2,8 @@ import {posts as getPosts, comments as getComments } from './api';
 import Pet from './helper';
 import {calculator} from "./helper";
 
-console.log(getPosts);
-console.log(getComments);
+getPosts();
+getComments();
 
 const bulldog = new Pet('Germany', 'female', 'brown');
 

@@ -54,10 +54,10 @@ const user = {
     history: 30
   };
 
+  //user.gender = "male";
   user["gender"] = "male";
   
 // ex7 question 6
 interface Entity{
     [prop : string] : any;
-    //instead of any i want (arg: Type): Type;
 }
